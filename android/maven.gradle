@@ -1,0 +1,32 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'com.clostra.newnode'
+
+install.repositories.mavenInstaller.pom.project {
+    packaging 'aar'
+    groupId group
+    artifactId 'newnode'
+
+    name 'newnode'
+    description 'Decentralized Content Distribution Network'
+    url 'https://github.com/clostra/newnode'
+
+    licenses {
+        license {
+            name 'GNU General Public License version 2'
+            url 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html'
+        }
+    }
+    developers {
+        developer {
+            id 'clostra'
+            name 'Clostra'
+            email 'contact@clostra.com'
+        }
+    }
+    scm {
+        connection 'https://github.com/clostra/newnode.git'
+        developerConnection 'https://github.com/clostra/newnode.git'
+        url 'https://github.com/clostra/newnode'
+    }
+}
